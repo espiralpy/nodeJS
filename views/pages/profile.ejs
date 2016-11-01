@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/assets/styles1.css" rel='stylesheet' type='text/css'/>
+  </head>
+  <body>
+    <% include nav.ejs %>
+    <h1>Practicing Streaming by HTTP in Node.js d</h1>
+    <p>User name : <%= person %></p>
+    <p>User age : <%= data.age %></p>
+    <p>User job : <%= data.job %></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% data.hobbies.forEach(function(item){ %>
+        <li><%= item %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
